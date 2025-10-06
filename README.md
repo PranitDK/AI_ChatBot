@@ -10,21 +10,21 @@ Ensure you have the following installed on your system:
 - Docker (for running Milvus)
 
 ## Installation
-1.Clone the repository:
+1. **Clone the repository**:
    ```bash
    git clone <repository-url>
    cd <repository-folder>
    ```
-Additionally, here are the commands you might need:
+   Additionally, here are the commands you might need:
 
-2. Create a virtual environment:
+2. **Create a virtual environment**:
    ```bash
    python -m venv venv
-3. Activate the virtual environment:
+3. **Activate the virtual environment**:
    On Windows:
    ```bash
       venv\Scripts\activate
-4. Install dependencies:
+4. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
 
@@ -32,6 +32,6 @@ Additionally, here are the commands you might need:
    ```bash
    uvicorn main:app --reload
 
-6.**Run the Streamlit Chat Interface**:
-```bash
+6. **Run the Streamlit Chat Interface**:
+ ```bash
 streamlit run interface.py
