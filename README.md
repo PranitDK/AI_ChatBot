@@ -10,22 +10,28 @@ Ensure you have the following installed on your system:
 - Docker (for running Milvus)
 
 ## Installation
-1. extract the zip file:
-   
+1.Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
 Additionally, here are the commands you might need:
 
-1. **Activate virtual environment**:
+2. Create a virtual environment:
    ```bash
-   venv\Scripts\activate
-
-2. **Install dependencies**:
+   python -m venv venv
+3. Activate the virtual environment:
+   On Windows:
+   ```bash
+      venv\Scripts\activate
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
 
-3. **Run the FastAPI application**:
+5. **Run the FastAPI application**:
    ```bash
    uvicorn main:app --reload
 
-4.**Run the Streamlit Chat Interface**:
+6.**Run the Streamlit Chat Interface**:
 ```bash
 streamlit run interface.py
